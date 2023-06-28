@@ -1,0 +1,50 @@
+body{
+    color: #050505;
+    font: 18px/27px 'Oxygen', sans-serif;
+}
+
+.inscript-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.element {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.element img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.element p {
+    color: #333;
+}
+
+.important {
+    color: #ff0000;
+}
+
+.inscription-info{
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+a{
+    color: #f26722; 
+}
+  
+.button {
+    background-color: #f26722; 
+    color: #fff;
+}

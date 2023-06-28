@@ -1,0 +1,74 @@
+body{
+    color: #050505;
+    font: 18px/27px 'Oxygen', sans-serif;
+}
+
+.column-one ,.column-two{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px 0;
+}
+  
+.media{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1); 
+    flex: 1;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    border: 1px solid #84abfd;
+    margin: 20px;
+    padding: 20px;
+    &:first-child { margin-left: 0; }
+    &:last-child { margin-right: 0; }
+    
+}
+
+.media:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); 
+}
+  
+.media .h5{
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+  
+.media .p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+  
+.media .card-footer  .small{
+    font-size: .875em;
+}
+  
+ h5 a{
+    text-decoration: none;
+    color: #050505;
+}
+  
+hr{
+    color: aliceblue;
+  
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.corps .title-filières h1{
+    color: #007bb6;
+    text-align: center;
+}
+  
+
+

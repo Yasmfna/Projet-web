@@ -1,0 +1,137 @@
+/*  CSS DU MENU  */
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu li {
+    margin-left: 20px;
+    padding:15px 0 15px 0;
+    border-bottom:#ffffff 0.5px solid;
+  }
+
+  .menu li:hover{
+    display: block;    
+    background: #f8f8f8; 
+    padding:15px 15px 15px 15px; 
+    
+  }
+  
+  .menu a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    white-space: nowrap;
+  }
+
+  
+  
+  /* Styles pour le menu hamburger */
+  
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      font-size: 24px;
+    }
+  
+    .menu {
+      
+      position: absolute;
+      top: 0;
+      right: -100%;
+      width: 20%;
+      height: 130vh;
+      background-color:  #84abfd;
+      transition: right 0.3s ease-in-out;
+    }
+  
+    .menu ul {
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 40px;
+    }
+  
+    .menu li {
+      margin-left: 0;
+      margin-bottom: 20px;
+      border-bottom:#ffffff 0.5px solid;
+
+    }
+  
+    #menu-toggle:checked ~ .menu {
+      right: 0;
+    }
+  }
+  
+
+#page-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #aac2f5;
+  padding: 20px;
+  font: 18px/27px 'Oxygen', sans-serif;
+}
+
+#page-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#page-menu ul li a:hover{
+  color:#84abfd;
+  text-decoration: none;
+    
+}
+
+#page-menu ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+
+#page-menu ul li a {
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+#page-menu #logo img{
+  height: auto;
+  max-width: 100%;
+ padding-left: 11px;
+}
+
+#page-menu #logo h1{
+  color: rgb(39, 39, 141);
+  box-shadow: #232323;
+  border-color: #ffffff;
+  margin-top: 2px;
+  height: 15px;
+  font-size: 20px;
+}
+
